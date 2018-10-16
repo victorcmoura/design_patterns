@@ -1,0 +1,3 @@
+interface MilitaryHardware {
+    void whatAreYou();
+}
