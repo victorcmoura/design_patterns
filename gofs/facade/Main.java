@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        CalculatorFacade calculator = new CalculatorFacade();
+        CalculatorFacade calculator = new CalculatorFacade(new Addition(), new Subtraction(), new Multiplication(), new Division());
 
         System.out.print("1 + 1 = ");
         System.out.println(calculator.add(1, 1));

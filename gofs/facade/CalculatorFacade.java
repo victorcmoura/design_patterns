@@ -5,11 +5,11 @@ public class CalculatorFacade {
     Multiplication multiplicationObject;
     Division divisionObject;
 
-    public CalculatorFacade(){
-        this.additionObject = new Addition();
-        this.subtractionObject = new Subtraction();
-        this.multiplicationObject = new Multiplication();
-        this.divisionObject = new Division();
+    public CalculatorFacade(Addition additionObject, Subtraction subtractionObject, Multiplication multiplicationObject, Division divisionObject){
+        this.additionObject = additionObject;
+        this.subtractionObject = subtractionObject;
+        this.multiplicationObject = multiplicationObject;
+        this.divisionObject = divisionObject;
     }
 
     public Integer add(Integer a, Integer b) {
